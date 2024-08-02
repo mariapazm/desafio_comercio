@@ -1,4 +1,58 @@
 body {
+    font-family: roboto;
     margin: 0;
-    padding: 0;
+    padding: 0; 
+}
+
+nav {
+    grid-area: n;
+    background-color: #162b4a;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+main {
+    grid-area: m;
+    background-color: #c3c3c3;
+}
+
+img {
+    height: 22em;
+    width: 22em;  
+}
+
+aside {
+    grid-area: a;
+    background-color: #c3c3c3;
+}
+
+ul {
+    list-style: none;
+    font-size: small;
+}
+
+footer {
+    grid-area: f;
+    background-color: #9b9b9b;
+    text-align: center;
+}
+
+.grid_container {
+    display: grid;
+    gap: 0.5em;
+    height: 100vh;
+    grid-template-areas: 
+    "n n n n n n n n"
+    "a a m m m m m m"
+    "a a m m m m m m"
+    "f f f f f f f f";
+}
+
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
 }
