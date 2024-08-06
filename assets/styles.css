@@ -5,9 +5,9 @@ body {
 }
 
 nav {
-    grid-area: n;
     background-color: #162b4a;
     color: #fff;
+    grid-area: n;
     text-align: center;
 }
 
@@ -15,19 +15,9 @@ h1 {
     font-size: xx-large;
 }
 
-main {
-    grid-area: m;
-    background-color: #c3c3c3;
-}
-
-img {
-    height: 22em;
-    width: 22em;  
-}
-
 aside {
-    grid-area: a;
     background-color: #c3c3c3;
+    grid-area: a;
 }
 
 ul {
@@ -35,24 +25,47 @@ ul {
     font-size: small;
 }
 
+main {
+    background-color: #c3c3c3;
+    grid-area: m;
+}
+
+figure { 
+    background-color: #fff;
+}
+
+img {
+    height: 22em;
+    width: 22em;  
+}
+
+button {
+    background-color: #162b4a;
+    color: #fff;
+    width: 100%;
+    height: 10%;
+}
 footer {
-    grid-area: f;
     background-color: #9b9b9b;
+    grid-area: f;
     text-align: center;
 }
 
 .grid_container {
     display: grid;
     gap: 0.5em;
-    height: 100vh;
     grid-template-areas: 
     "n n n n n n n n"
     "a a m m m m m m"
     "a a m m m m m m"
     "f f f f f f f f";
+    height: 100vh;
 }
 
 .flex_container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: center;
 }
