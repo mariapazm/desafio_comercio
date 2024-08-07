@@ -21,8 +21,20 @@ aside {
 }
 
 ul {
+    align-items: flex-start;
+    display:flex;
+    flex-direction: column;
+    font-size: medium;
+    height: 20%;
+    justify-content: space-evenly;
     list-style: none;
-    font-size: small;
+    padding: 0.5em;
+    width: 100%;
+    flex-wrap: nowrap;
+    
+}
+.flex_item {
+    justify-content: center;
 }
 
 main {
@@ -69,3 +81,4 @@ footer {
     justify-content: flex-start;
     text-align: center;
 }
+
