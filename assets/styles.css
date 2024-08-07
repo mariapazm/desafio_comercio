@@ -33,8 +33,13 @@ ul {
     flex-wrap: nowrap;
     
 }
-.flex_item {
+.flex_producto {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 0.5em;
 }
 
 main {
@@ -43,12 +48,12 @@ main {
     padding-top: 1em;
     padding-bottom: 1em;
 }
-
+/*
 figure { 
     background-color: #fff;
     padding: 0.5em 0.5em 2em 0.5em;
     margin: 1.5em;
-}
+}*/
 
 img {
     height: 22em;
