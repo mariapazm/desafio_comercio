@@ -28,7 +28,7 @@ ul {
     height: 20%;
     justify-content: space-evenly;
     list-style: none;
-    padding: 0.5em;
+    padding: 0.5em 2em 0.5em 0.5em;
     width: 100%;
     flex-wrap: nowrap;
     
@@ -40,10 +40,14 @@ ul {
 main {
     background-color: #c3c3c3;
     grid-area: m;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 figure { 
     background-color: #fff;
+    padding: 0.5em 0.5em 2em 0.5em;
+    margin: 1.5em;
 }
 
 img {
@@ -57,15 +61,17 @@ button {
     width: 100%;
     height: 10%;
 }
+
 footer {
-    background-color: #9b9b9b;
+    background-color: #e1e1e1;
     grid-area: f;
     text-align: center;
+    padding: 1em;
 }
 
 .grid_container {
     display: grid;
-    gap: 0.5em;
+    gap: 0.1em;
     grid-template-areas: 
     "n n n n n n n n"
     "a a m m m m m m"
@@ -74,11 +80,10 @@ footer {
     height: 100vh;
 }
 
-.flex_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    text-align: center;
+.grid_productos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 1em;
+ 
 }
 
